@@ -92,7 +92,7 @@ export const useAccessStore = createPersistStore(
     fetch() {
       if (fetchState > 0 || getClientConfig()?.buildMode === "export") return;
       fetchState = 1;
-      fetch("/api/config", {
+      fetch(location.pathname + "/api/config", {
         method: "post",
         body: null,
         headers: {
