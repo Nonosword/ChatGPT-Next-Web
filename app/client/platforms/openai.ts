@@ -90,7 +90,7 @@ export class ChatGPTApi implements LLMApi {
 
     console.log("[Proxy Endpoint] ", baseUrl, path);
 
-    return location.pathname.slice(0, -1) + [baseUrl, path].join("/");
+    return [baseUrl, path].join("/");
   }
 
   extractMessage(res: any) {
