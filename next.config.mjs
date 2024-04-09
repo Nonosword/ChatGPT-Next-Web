@@ -33,6 +33,8 @@ const nextConfig = {
   experimental: {
     forceSwcTransforms: true,
   },
+  basePath: '/chat',
+  assetPrefix: '/chat/',
 };
 
 const CorsHeaders = [
